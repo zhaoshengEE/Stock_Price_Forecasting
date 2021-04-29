@@ -7,6 +7,6 @@
 #### simple recurrent neural network (RNN);<br>
 #### long short-term memory (LSTM) network;<br>
 #### gated recurrent units (GRU) network;<br>
-The GME price data is located in `Data` folder
-`Img` folder contains the graph of prediction result on close price via each model
-The \*\_`Model` folders saved the trained models respectively.
+The GME price data is located in `Data` folder<br>
+`Img` folder contains the graphs of prediction result on close price via each model<br>
+The \*\_`Model` folders saved the trained models of each techniques respectively.
