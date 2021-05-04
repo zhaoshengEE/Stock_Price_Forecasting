@@ -3,7 +3,7 @@
 Course project for EECE 571T (Advanced Machine Learning Tools for Engineers) on University of British Colunmbia
 
 ## Authors
-Menghong Huang & &nbsp; Zhaosheng Li
+Menghong Huang  &nbsp; Zhaosheng Li
 
 ## Table of contents
 
