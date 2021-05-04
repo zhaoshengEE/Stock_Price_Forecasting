@@ -1,5 +1,7 @@
 # Stock Price Forecasting
 
+Course project for EECE 571T (Advanced Machine Learning Tools for Engineers) on University of British Colunmbia
+
 ## Authors
 Menghong Huang, &nbsp; Zhaosheng Li
 
@@ -17,12 +19,10 @@ Menghong Huang, &nbsp; Zhaosheng Li
 
 ## Description
 This project implements various machine learning (ML) models to forecast the stock price of an
-American gaming merchandise retailer, namely, _GameStop Corporation_. There are two types of forecasts in this project, which are the next-day forecast and the 30-day forecast. 
+American gaming merchandise retailer, namely, _GameStop Corporation (GME)_. There are two types of forecasts in this project, which are the next-day forecast and the 30-day forecast. 
 The objective of this project is to compare the performance of each model on those two kinds of forecasts, and the comparison is based on several evaluation metrics.
 
 ## ML models
-
-Here are the ML models used in this project:
 
 - Linear regression (LR)
 - Support vector regression (SVR)
@@ -33,10 +33,15 @@ Here are the ML models used in this project:
 
 ## Data in this project
 
+The dataset in this project, _GME Historical Stock Prices_, is publicly available on [Kaggle](https://www.kaggle.com/hananxx/gamestop-historical-stock-prices). It is also generously offered by Yahoo finance website.
+The dataset records the daily data of GME stock exchange, and each entry has six features related to the stock price. The six features are `open price`, `high price`, `low price`, `volume`, `close price`, and `adjusted close price` 
 
 ## Forecasts
 
 ### Next-day forecast
+
+Most of the ML models in this project have the stock prices in the latest consecutive four days as input, whereas the LR and SVR models use the `close price` on today as input.
+The GME close price right after today is the target variable.
 
 ![Next-day_forecast.png](img/Next-day_forecast.png)
 
@@ -44,28 +49,51 @@ Here are the ML models used in this project:
 
 ### 30-day forecast
 
+Most of the ML models in this project have the stock prices in the latest thirty days in a row as input, whereas the LR and SVR models use the `close price` on today as input.
+The GME close price on the 30th day after today is the target variable.
+
 ![30-day_forecast.png](img/30-day_forecast.png)
 
 
 ## Evaluation metrics
 
-
+- Root mean square error (RMSE)
+- Coefficient of determination (R<sup>2</sup>)
+- Trend prediction accuracy (Accuracy)
 
 ## Files in this repo
 
 This GitHub repo contains the following folders or files
 
-+ `img` folder contains the images of the training results, neural network structures, and test results
++ `*_model` folders contain all the trained models used in this project
 
-+ `model` folder contains the all the trained ANN and CNN models used in this project
++ `data` folder contains the dataset used in this project
 
-+ `ANN_vs_CNN.ipynb` is the code for comparing the performance of ANN and CNN on classifying the modulation schemes of the RF signals in dataset
++ `doc` folder contains the documentation that is relevant to this work, which include a project report that has specific technical details and in-depth discussion
 
-+ `ANN_using_PCA.ipynb` and `CNN_using_PCA.ipynb` are the code for applying PCA on the original dataset and observing the performance of ANN and CNN versus different values of dimension reduction 
++ `img` folder mainly contains the images of the training results, model structures, and test results
 
-+ `ANN.ipynb` and `CNN.ipynb` are the prototype of ANN and CNN models at the beginning stage of this project
++ `BPNN_1.ipynb` is the code for using BPNN to do next-day forecast
 
-+ `Project_Report.pdf` is the report of this project, which contains specific technical details and in-depth discussion
++ `BPNN_30.ipynb` is the code for using BPNN to do 30-day forecast
+
++ `GRU_1.ipynb` is the code for using GRU to do next-day forecast
+
++ `GRU_30.ipynb` is the code for using GRU to do 30-day forecast
+
++ `LSTM_1.ipynb` is the code for using LSTM to do next-day forecast
+
++ `LSTM_30.ipynb` is the code for using LSTM to do 30-day forecast
+
++ `SVR2.0_1.ipynb` is the code for using SVR and LR models to do next-day forecast
+
++ `SVR2.0_30.ipynb` is the code for using SVR and LR models to do 30-day forecast
+
++ `simpleRNN_1.ipynb` is the code for using simple RNN to do next-day forecast
+
++ `simpleRNN_30.ipynb` is the code for using simple RNN to do 30-day forecast
+
++ `SVR.ipynb` is out initial attempt on this project, which aims to conduct day-to-day forecast. But the result is far below our expectation and turns our prediction into the next-day forecast and 30-day forecast instead
 
 ## Results
 
