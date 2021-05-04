@@ -108,9 +108,11 @@ This GitHub repo contains the following folders or files
 | LR                   | SVR        |
 | -------------------------- | ------------------------- |
 | ![LR_1_without_last_11_days.png](img/LR_1_without_last_11_days.png) | ![SVR_1_without_last_11_days.png](img/SVR_1_without_last_11_days.png) |
+
 | BPNN                   | Simple RNN       |
 | -------------------------- | ------------------------- |
 | ![BPNN_1_exclude_last_11_days.png](img/BPNN_1_exclude_last_11_days.png) | ![simpleRNN_1_predict_ex11.png](img/simpleRNN_1_predict_ex11.png) |
+
 | LSTM                   | GRU       |
 | -------------------------- | ------------------------- |
 | ![LSTM_1_without_last_11_days.png](img/LSTM_1_without_last_11_days.png) | ![GRU_1_without_last_11_days.png](img/GRU_1_without_last_11_days.png) |
@@ -128,9 +130,11 @@ This GitHub repo contains the following folders or files
 | LR                   | SVR        |
 | -------------------------- | ------------------------- |
 | ![LR_30_without_last_11_days.png](img/LR_30_without_last_11_days.png) | ![SVR_30_without_last_11_days.png](img/SVR_30_without_last_11_days.png) |
+
 | BPNN                   | Simple RNN       |
 | -------------------------- | ------------------------- |
 | ![BPNN_30_test_exclude11.png](img/BPNN_30_test_exclude11.png) | ![simpleRNN_30_test_exclude11.png](img/simpleRNN_30_test_exclude11.png) |
+
 | LSTM                   | GRU       |
 | -------------------------- | ------------------------- |
 | ![LSTM_30_without_last_11_days.png](img/LSTM_30_without_last_11_days.png) | ![GRU_30_without_last_11_days.png](img/GRU_30_without_last_11_days.png) |
