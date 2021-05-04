@@ -1,6 +1,6 @@
 # Stock Price Forecasting
 
-Course project for EECE 571T (Advanced Machine Learning Tools for Engineers) on University of British Colunmbia
+Self-defined course project for EECE 571T (Advanced Machine Learning Tools for Engineers) on University of British Colunmbia
 
 ## Authors
 Menghong Huang and Zhaosheng Li
