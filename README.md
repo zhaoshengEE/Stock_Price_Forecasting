@@ -3,7 +3,7 @@
 Course project for EECE 571T (Advanced Machine Learning Tools for Engineers) on University of British Colunmbia
 
 ## Authors
-Menghong Huang, &nbsp; Zhaosheng Li
+Menghong Huang & &nbsp; Zhaosheng Li
 
 ## Table of contents
 
@@ -97,6 +97,22 @@ This GitHub repo contains the following folders or files
 
 ## Results
 
+### Next-day forecasting result
+
+| | LR | SVR | BPNN | Simple RNN | LSTM | GRU |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| RMSE | 0.502 | 0.528 | 0.557 | 0.669 | 0.583 | 0.663 |
+| R<sup>2</sup> | 0.993 | 0.993 | 0.992 | 0.988 | 0.991 | 0.988 |
+| Accuracy | 50.1% | 48.6% | 47.6% | 50.9% | 49.6% | 49.8% |
+
+### 30-day forecasting result
+
+| | LR | SVR | BPNN | Simple RNN | LSTM | GRU |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| RMSE | 2.365 | 2.809 | 3.539 | 3.509 | 2.407 | 2.438 |
+| R<sup>2</sup> | 0.848 | 0.786 | 0.654 | 0.660 | 0.841 | 0.836 |
+| Accuracy | 51.3% | 48.3% | 51.1% | 49.1% | 48.9% | 50.3% |
+
 ## Dependencies for this project
 
 This project requires the following python modules:
@@ -112,8 +128,3 @@ Please make sure you have all the modules installed before running the code. For
 ```bash
 git clone https://github.com/zhaoshengEE/Stock_Price_Forecasting.git
 ```
-
-
-The GME price data is located in `Data` folder<br>
-`Img` folder contains the graphs of prediction result on close price via each model<br>
-The \*\_`Model` folders saved the trained models of each techniques respectively.
