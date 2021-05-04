@@ -105,6 +105,16 @@ This GitHub repo contains the following folders or files
 | R<sup>2</sup> | 0.993 | 0.993 | 0.992 | 0.988 | 0.991 | 0.988 |
 | Accuracy | 50.1% | 48.6% | 47.6% | 50.9% | 49.6% | 49.8% |
 
+| LR                   | SVR        |
+| -------------------------- | ------------------------- |
+| ![LR_1_without_last_11_days.png](img/LR_1_without_last_11_days.png) | ![SVR_1_without_last_11_days.png](img/SVR_1_without_last_11_days.png) |
+| BPNN                   | Simple RNN       |
+| ![BPNN_1_exclude_last_11_days.png](img/BPNN_1_exclude_last_11_days.png) | ![simpleRNN_1_predict_ex11.png](img/simpleRNN_1_predict_ex11.png) |
+| LSTM                   | GRU       |
+| ![LSTM_1_without_last_11_days.png](img/LSTM_1_without_last_11_days.png) | ![GRU_1_without_last_11_days.png](img/GRU_1_without_last_11_days.png) |
+
+&nbsp;
+
 ### 30-day forecasting result
 
 | | LR | SVR | BPNN | Simple RNN | LSTM | GRU |
@@ -112,6 +122,14 @@ This GitHub repo contains the following folders or files
 | RMSE | 2.365 | 2.809 | 3.539 | 3.509 | 2.407 | 2.438 |
 | R<sup>2</sup> | 0.848 | 0.786 | 0.654 | 0.660 | 0.841 | 0.836 |
 | Accuracy | 51.3% | 48.3% | 51.1% | 49.1% | 48.9% | 50.3% |
+
+| LR                   | SVR        |
+| -------------------------- | ------------------------- |
+| ![LR_30_without_last_11_days.png](img/LR_30_without_last_11_days.png) | ![SVR_30_without_last_11_days.png](img/SVR_30_without_last_11_days.png) |
+| BPNN                   | Simple RNN       |
+| ![BPNN_30_test_exclude11.png](img/BPNN_30_test_exclude11.png) | ![simpleRNN_30_predict_ex11.png](img/simpleRNN_30_predict_ex11.png) |
+| LSTM                   | GRU       |
+| ![LSTM_30_without_last_11_days.png](img/LSTM_30_without_last_11_days.png) | ![GRU_30_without_last_11_days.png](img/GRU_30_without_last_11_days.png) |
 
 ## Dependencies for this project
 
